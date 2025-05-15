@@ -1,238 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harish's Portfolio</title>
-    <style>
-         *{
-            margin:0;
-            padding: 0;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harish's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-         }
+    body {
+      background-color: rgb(2, 2, 36);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
-         body{background-color: rgb(2, 2, 36);
-                          color:white;
-         
-         }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
 
-         nav{
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            height:80px;
-            background-color: rgb(18,18,62);
-         }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
 
-         nav ul{
-            display: flex;
-            justify-content: center ;
-         }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
 
-         nav ul li{
-         list-style: None;
-         margin: 0 23px;
-         }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
 
-         nav ul li a{
-         text-decoration: None;
-         color: white;
-        
-         }
+    nav ul li a:hover {
+      color: rgb(153, 153, 226);
+      font-size: 1.01rem;
+    }
 
-         nav ul li a:hover{
-         
-         color: rgb(153, 153, 226);
-         font-size: 1.01rem;
-        
-         }
+    main hr {
+      border: 0;
+      background: #544fb5;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
 
-         main hr{
-            border: 0;
-            background: #544fb5;
-            height: 1.2px;
-            margin :60 84px;
+    .left {
+      font-size: 2rem;
+    }
 
-         }
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 130px 0;
+    }
 
-         .left{
-            font-size: 1.5rem;
-         }
+    .firstSection > div {
+      width: 30%;
+    }
 
-         .firstSection{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        
-            }
-        .firstSection >div{
-           width:30% 
-        
-            }
-        .leftSection{
-           font-size: 3rem;
-           
+    .leftSection {
+      font-size: 3rem;
+    }
 
-           }
+    .rightSection img {
+      width: 115%;
+    }
 
-        leftSection.btn {
-            padding: 12px;
-            background: red;
-           }
+    .purple {
+      color: rgb(170, 107, 228);
+    }
+
+    #element {
+      color: rgb(170, 107, 228);
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display:inline;
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: rgb(170, 107, 228);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: rgb(140, 87, 200);
+    }
+
+    .btn:focus,
+    .btn:active {
+      outline: none;
+      border: none;
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+    }
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
+
+    .secondSection .box {
+      background: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+    }
+
+    footer {
+      background-color: rgb(89, 89, 164);
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer div {
+      width: 223px;
+    }
+
+    .footer-rights {
+      text-align: center;
+      color: gray;
+      padding-bottom: 20px;
+    }
+    .button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #8675e8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-container a {
+  display: inline-block;
+  background-color: #a259ff;
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 10px; /* space between buttons */
+}
 
 
-        .rightSection img{
-            width: 80%
-           }
-
-        .purple{
-            color: rgb(170, 107, 228);
-
-        }
-        .text-gray{
-            color:gray;
-        }
-        #element{
-            color: rgb(170, 107, 228);
-
-        }
-        .secondSection{
-            max-width: 80vw;
-            margin: auto;
-
-        }
-        .secondSection h1{
-            font-size: 1.9rem;
-
-        }
-        .secondSection .box{
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-        .secondSection .vertical{
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 100px; 
-        }
-        footer{
-            background-color: rgb(89, 89, 164);
-          
-        }
-        .footer{
-            display:flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-        .footer ul{
-            list-style: none;
-        }
-
-        .footer div{
-            width: 223px;
-        }
-        
-        footer.footer-rights{
-            text-align: center;
-            color: gray;
-        }
-               
-         
-
-    </style> 
+  </style>
 </head>
-<body
-    
->
-    <header>
-        <nav>
-           <div class="left">Harish's Portfolio</div>
-           <div class="right">
-            <ul>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <Li><a href="/">Contact me</a></Li>
-            </ul>
-           </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstSection">
-           <div class="leftSection">
-            Hi, My name is <span class="purple">Harish</span>  
-            <div> and I am a passionate</div>
-            <span id="element"></span>
-            <div class="button">
-                <button class="btn">Download Resume</button>
+<body>
+  <header>
+    <nav>
+      <div class="left">Harish's Portfolio</div>
+      <div class="right">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-                <button class="btn">Linkedin profile</button>
-                <button class="btn">Github Link</button>
-
-            </div>
-
-           </div>
-           <div class="rightSection">
-            <img src="photos/pp.png">
-           </div>
-
-        </section>
-
-        <hr>
-
-       
-
-    </main>
-
-    <footer>
-        <div class="footer">
-            <div class="first">
-                <h3>Harish's Portfolio</h3>
-            </div>
-            <div class="second">
-                <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>HSHd</li>
-                </ul>
-            </div>
-            <div class="third">
-                <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>HSHd</li>
-                </ul>
-            </div>
-            <div class="fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>HSHd</li>
-                </ul>
-            </div>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Harish</span>
+        <div> and I am a passionate</div>
+        <span id="element"></span>
+        <div class="button button-container">
+          <a href="resume.pdf" download><button class="btn">Download Resume</button></a>
+          <a href="https://www.linkedin.com/in/your-link" target="_blank"><button class="btn">LinkedIn Profile</button></a>
+          <a href="https://github.com/your-username" target="_blank"><button class="btn">GitHub Link</button></a>
         </div>
+      </div>
+      <div class="rightSection">
+        <img src="https://www.pngkey.com/png/full/162-1627423_mas-software-engineer-hob-vacancy-computer-engineer-cartoon.png" alt="Developer Illustration">
+      </div>
+    </section>
 
-        <div class="footer-rights">
-            www.harishportfolio.com | All right reserved
-        </div>
+    <hr />
+  </main>
 
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-   <script>
+  <footer>
+    <div class="footer">
+      <div class="first"><h3>Harish's Portfolio</h3></div>
+      <div class="second">
+        <ul>
+          <li>Home page</li>
+        </ul>
+      </div>
+      <div class="third">
+        <ul>
+          <li>Machine learning projects</li>
+        </ul>
+      </div>
+      <div class="fourth">
+        <ul>
+          <li>Web Development</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-rights">
+      www.harishportfolio.com | All rights reserved
+    </div>
+  </footer>
+
+  <!-- Typed.js Animation -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Data scientist','Aiml Engineer'],
+      strings: ['Web Developer', 'Data Scientist', 'AIML Engineer'],
       typeSpeed: 50,
     });
-   </script>
+  </script>
 
+  <!-- Smooth Scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
