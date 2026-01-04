@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Harish's Portfolio</title>
+
   <style>
     * {
       margin: 0;
@@ -23,56 +24,54 @@
       align-items: center;
       height: 80px;
       background-color: rgb(18, 18, 62);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav ul {
       display: flex;
-      justify-content: center;
     }
 
     nav ul li {
       list-style: none;
-      margin: 0 23px;
+      margin: 0 20px;
     }
 
     nav ul li a {
       text-decoration: none;
       color: white;
+      font-size: 1rem;
     }
 
     nav ul li a:hover {
       color: rgb(153, 153, 226);
-      font-size: 1.01rem;
-    }
-
-    main hr {
-      border: 0;
-      background: #544fb5;
-      height: 1.2px;
-      margin: 60px 84px;
     }
 
     .left {
-      font-size: 2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 80px 0;
     }
 
     .firstSection {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin: 130px 0;
-    }
-
-    .firstSection > div {
-      width: 30%;
+      flex-wrap: wrap;
     }
 
     .leftSection {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      max-width: 500px;
     }
 
     .rightSection img {
-      width: 115%;
+      width: 100%;
+      max-width: 400px;
     }
 
     .purple {
@@ -83,19 +82,19 @@
       color: rgb(170, 107, 228);
     }
 
-    .button {
-      margin-top: 20px;
+    .button-container {
+      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     .btn {
-      display:inline;
-      padding: 10px 15px;
-      margin: 5px;
       background-color: rgb(170, 107, 228);
       color: white;
-      border: none;
+      text-decoration: none;
+      padding: 10px 15px;
       border-radius: 5px;
-      cursor: pointer;
       font-size: 1rem;
       transition: background-color 0.3s ease;
     }
@@ -104,168 +103,155 @@
       background-color: rgb(140, 87, 200);
     }
 
-    .btn:focus,
-    .btn:active {
-      outline: none;
-      border: none;
+    hr {
+      border: 0;
+      height: 1px;
+      background: #544fb5;
+      margin: 60px 80px;
     }
 
-    .secondSection {
+    .content-section {
       max-width: 80vw;
       margin: auto;
+      text-align: center;
     }
 
-    .secondSection h1 {
-      font-size: 1.9rem;
-    }
-
-    .secondSection .box {
-      background: white;
-      width: 80vw;
-      height: 2px;
-      margin: 56px 0;
-      display: flex;
-    }
-
-    .secondSection .vertical {
-      height: 93px;
-      width: 1px;
-      background-color: white;
-      margin: 0 100px;
+    .content-section h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: rgb(170, 107, 228);
     }
 
     footer {
-      background-color: rgb(89, 89, 164);
+      background-color: rgb(18, 18, 62);
+      margin-top: 60px;
     }
 
     .footer {
       display: flex;
-      padding: 23px 122px;
       justify-content: space-evenly;
+      padding: 30px;
+      flex-wrap: wrap;
     }
 
     .footer ul {
       list-style: none;
     }
 
-    .footer div {
-      width: 223px;
-    }
-
     .footer-rights {
       text-align: center;
       color: gray;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
+      font-size: 0.9rem;
     }
-    .button-container {
-  display: flex;
-  gap: 10px;
-  justify-content: center; 
-  margin-top: 20px;
-}
-
-.button-container button {
-  background-color: #8675e8;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.button-container a {
-  display: inline-block;
-  background-color: #a259ff;
-  color: white;
-  text-decoration: none;
-  padding: 5px 5px;
-  border-radius: 5px;
-  margin-right: 10px; /* space between buttons */
-}
-
-
   </style>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <div class="left">Harish's Portfolio</div>
-      <div class="right">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact me</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="firstSection">
-      <div class="leftSection">
-        Hi, My name is <span class="purple">Harish</span>
-        <div> and I am a passionate</div>
-        <span id="element"></span>
-        <div class="button button-container">
-          <a href="https://raw.githubusercontent.com/Hgupta-77/My-portfolio/main/resume_nn(2).pdf
-" download><button class="btn">Download Resume</button></a>
-          <a href="https://www.linkedin.com/in/harish-gupta-667b042a5/" target="_blank"><button class="btn">LinkedIn Profile</button></a>
-          <a href="https://github.com/Hgupta-77" target="_blank"><button class="btn">GitHub Link</button></a>
-        </div>
-      </div>
-      <div class="rightSection">
-        <img src="https://www.pngkey.com/png/full/162-1627423_mas-software-engineer-hob-vacancy-computer-engineer-cartoon.png" alt="Developer Illustration">
-      </div>
-    </section>
+<header>
+  <nav>
+    <div class="left">Harish's Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <hr />
-  </main>
+<main>
 
-  <footer>
-    <div class="footer">
-      <div class="first"><h3>Harish's Portfolio</h3></div>
-      <div class="second">
-        <ul>
-          <li>Home page</li>
-        </ul>
-      </div>
-      <div class="third">
-        <ul>
-          <li>Machine learning projects</li>
-        </ul>
-      </div>
-      <div class="fourth">
-        <ul>
-          <li>Web Development</li>
-        </ul>
+  <!-- HOME -->
+  <section id="home" class="firstSection">
+    <div class="leftSection">
+      Hi, My name is <span class="purple">Harish</span>
+      <div>and I am a passionate</div>
+      <span id="element"></span>
+
+      <div class="button-container">
+        <a class="btn" href="https://raw.githubusercontent.com/Hgupta-77/My-portfolio/main/resume_nn(2).pdf" download>Download Resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/harish-gupta-667b042a5/" target="_blank">LinkedIn</a>
+        <a class="btn" href="https://github.com/Hgupta-77" target="_blank">GitHub</a>
       </div>
     </div>
 
-    <div class="footer-rights">
-      www.harishportfolio.com | All rights reserved
+    <div class="rightSection">
+      <img src="https://www.pngkey.com/png/full/162-1627423_mas-software-engineer-hob-vacancy-computer-engineer-cartoon.png" alt="Developer">
     </div>
-  </footer>
+  </section>
 
-  <!-- Typed.js Animation -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Data Scientist', 'AIML Engineer'],
-      typeSpeed: 50,
-    });
-  </script>
+  <hr>
 
-  <!-- Smooth Scrolling -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
+  <!-- SERVICES -->
+  <section id="services" class="content-section">
+    <h1>Services</h1>
+    <p>Web Development, Data Science Projects, Machine Learning Models</p>
+  </section>
+
+  <hr>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="content-section">
+    <h1>Projects</h1>
+    <p>Movie Recommendation System, Stock Market Dashboard, Portfolio Website</p>
+  </section>
+
+  <hr>
+
+  <!-- CONTACT -->
+  <section id="contact" class="content-section">
+    <h1>Contact</h1>
+    <p>Email: guptaharish8305@gmail.com</p>
+  </section>
+
+  <hr>
+
+  <!-- ABOUT -->
+  <section id="about" class="content-section">
+    <h1>About Me</h1>
+    <p>Data Science enthusiast, Web Developer, AIML learner, placement focused.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer">
+    <div><h3>Harish's Portfolio</h3></div>
+    <div><ul><li>Web Development</li></ul></div>
+    <div><ul><li>Machine Learning</li></ul></div>
+    <div><ul><li>Data Science</li></ul></div>
+  </div>
+
+  <div class="footer-rights">
+    © 2026 Harish Gupta | All rights reserved
+  </div>
+</footer>
+
+<!-- Typed.js -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  new Typed('#element', {
+    strings: ['Web Developer', 'Data Scientist', 'AIML Engineer'],
+    typeSpeed: 50,
+    loop: true
+  });
+</script>
+
+<!-- Smooth Scroll -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
